@@ -1,47 +1,36 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+
+import{ref} from "vue"
+
+let items = ref("cap")
+
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+  <v-app id="inspire">
+    <v-navigation-drawer
+      model-value
+      class="pt-4"
+      color="grey-lighten-3"
+      rail
+    >
+      <v-avatar
+        v-for="n in 6"
+        :key="n"
+        :color="`grey-${n === 1 ? 'darken' : 'lighten'}-1`"
+        :size="n === 1 ? 36 : 20"
+        class="d-block text-center mx-auto mb-9"
+      ></v-avatar>
+    </v-navigation-drawer>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+    <v-main>
+      <!--  -->
+    </v-main>
+  </v-app>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+<script>
+  export default {
+    //
   }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
+</script>
