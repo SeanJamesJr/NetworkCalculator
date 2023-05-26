@@ -2,11 +2,12 @@
 
 import{ref} from "vue"
 
-let items = ref("cap")
-
 </script>
 
 <template>
+<router-link to="/">home</router-link> 
+<router-link to="/About">About</router-link>
+  <router-view></router-view>
   <v-app id="inspire">
     <v-navigation-drawer
       model-value
@@ -28,9 +29,3 @@ let items = ref("cap")
     </v-main>
   </v-app>
 </template>
-
-<script>
-  export default {
-    //
-  }
-</script>
