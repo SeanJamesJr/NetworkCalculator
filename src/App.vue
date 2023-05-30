@@ -1,31 +1,20 @@
 <script setup>
-
-import{ref} from "vue"
-
 </script>
 
 <template>
-<router-link to="/">home</router-link> 
-<router-link to="/About">About</router-link>
-  <router-view></router-view>
-  <v-app id="inspire">
-    <v-navigation-drawer
-      model-value
-      class="pt-4"
-      color="grey-lighten-3"
-      rail
-    >
-      <v-avatar
-        v-for="n in 6"
-        :key="n"
-        :color="`grey-${n === 1 ? 'darken' : 'lighten'}-1`"
-        :size="n === 1 ? 36 : 20"
-        class="d-block text-center mx-auto mb-9"
-      ></v-avatar>
-    </v-navigation-drawer>
+<nav>
+<router-link to="/">Home</router-link>
+<router-link to ="/about">About</router-link>
+<router-link to="/Contact">Contact me</router-link>
+<router-link to="/subnet">subnet</router-link>
+<router-link to="/Ip-checker">Ip Ip-checker</router-link>
+<router-link to="/Binary-Convert">Binary converter</router-link>
+<router-link to="/Security-checker"></router-link>
 
-    <v-main>
-      <!--  -->
-    </v-main>
-  </v-app>
+
+
+
+</nav>
+
+<router-view></router-view>
 </template>

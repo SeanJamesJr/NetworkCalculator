@@ -1,19 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import {createRouter} from 'vue-router'
-import Home from '@/views/Home.vue'
-import About from '@/views/About.vue'
-
-
-
-const router = createRouter({
-history: createWebHistory(),
-routes:[
- {path:'/',name:'Home',componenet:Home},
- {path:'/about',name:'About',componenet:About}
-]
-
-})
+import router from './router.js'
 
 // Vuetify
 import 'vuetify/styles'
@@ -31,7 +18,4 @@ const vuetify = createVuetify({
 
 
 
-createApp(App)
-.use(vuetify)
-.use(router)
-.mount('#app')
+createApp(App).use(vuetify).use(router).mount('#app')
