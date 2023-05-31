@@ -4,8 +4,8 @@ import Contact from './views/Contact.vue'
 import BinaryCon from './views/BinaryCon.vue'
 import AboutPage from './views/AboutPage.vue'
 import subnet from './views/subnet.vue'
-import SecurityChecker from './views/SecurityChecker.vue'
-
+import SecurityCheck from './views/SecurityCheck.vue'
+import ipcheck from './views/ipcheck.vue'
 
 const routes = [
 {
@@ -14,23 +14,27 @@ component:HomePage
 },
 {
  path:'/AboutPage',
-component:
+component:AboutPage
 },
 {
   path: '/BinaryCon',
- component:HomePage
+ component:BinaryCon
  },
  {
   path:'/subnet',
- component:
+ component:subnet
  },
  {
   path: '/Contact',
- component:HomePage
+ component:Contact
  },
  {
-  path:'/SecurityChecker',
- component:
+  path:'/SecurityCheck',
+ component:SecurityCheck
+ },
+ {
+  path:'/ipcheck',
+ component:ipcheck
  }
 
 ]
