@@ -1,5 +1,14 @@
 <script setup>
+
+async function findit(){
+
+  const result = await fetch ("https://networkcalc.com/api/security/certificate/{hostname}")
+
+}
 </script>
+
+
+
 
 <template>
 
@@ -52,6 +61,7 @@ color: #fffffe;
 
 body{
 background-color:#16161a;
+color: #fffffe;
 
 }
 
