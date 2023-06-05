@@ -1,9 +1,6 @@
 <script setup>
 
-async function findit(){
-  const result = await fetch ("https://networkcalc.com/api/security/certificate/example.com")
-  console.log(result)
-}
+
 </script>
 
 <template>

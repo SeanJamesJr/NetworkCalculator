@@ -5,7 +5,7 @@ import BinaryCon from './views/BinaryCon.vue'
 import AboutPage from './views/AboutPage.vue'
 import subnet from './views/subnet.vue'
 import SecurityCheck from './views/SecurityCheck.vue'
-import ipcheck from './views/ipcheck.vue'
+import Encoder from './views/Encoder.vue'
 
 const routes = [
 {
@@ -33,8 +33,8 @@ component:AboutPage
  component:SecurityCheck
  },
  {
-  path:'/ipcheck',
- component:ipcheck
+  path:'/Encoder',
+ component:Encoder
  }
 
 ]

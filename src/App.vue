@@ -32,7 +32,7 @@ async function findit(){
           <v-list-item prepend-icon="mdi-folder" title="Home Page" to='/'></v-list-item>
           <v-list-item prepend-icon="mdi-account-multiple" title="About Page" to='/AboutPage' ></v-list-item>
           <v-list-item prepend-icon="mdi-star" title="Binary Converter" to='BinaryCon' ></v-list-item>
-          <v-list-item prepend-icon="mdi-folder" title="Ip Check" to='/ipcheck'></v-list-item>
+          <v-list-item prepend-icon="mdi-folder" title="Encoder" to='/Encoder'></v-list-item>
           <v-list-item prepend-icon="mdi-account-multiple" title="subnet" to='/subnet' ></v-list-item>
           <v-list-item prepend-icon="mdi-star" title="security check" to='/SecurityCheck' ></v-list-item>
           <v-list-item prepend-icon="mdi-star" title="Contact me" to='/Contact' ></v-list-item>
@@ -69,4 +69,5 @@ v-nav{
 background-color: #72757e;
 
 }
+
 </style>
