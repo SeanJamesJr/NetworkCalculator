@@ -1,8 +1,6 @@
 import {createRouter, createWebHashHistory,} from 'vue-router'
 import HomePage from './views/HomePage.vue'
-import Contact from './views/Contact.vue'
 import BinaryCon from './views/BinaryCon.vue'
-import AboutPage from './views/AboutPage.vue'
 import subnet from './views/subnet.vue'
 import SecurityCheck from './views/SecurityCheck.vue'
 import Encoder from './views/Encoder.vue'
@@ -13,20 +11,12 @@ const routes = [
 component:HomePage
 },
 {
- path:'/AboutPage',
-component:AboutPage
-},
-{
   path: '/BinaryCon',
  component:BinaryCon
  },
  {
   path:'/subnet',
  component:subnet
- },
- {
-  path: '/Contact',
- component:Contact
  },
  {
   path:'/SecurityCheck',
